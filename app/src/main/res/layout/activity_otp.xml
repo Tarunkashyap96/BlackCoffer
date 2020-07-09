@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Otp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="just a quick security check"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="please enter the verification code we sent you."
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="it might take a few minutes to receive your code"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Enter Verification code"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:hint="Enter OTP"
+        android:id="@+id/verification_code_entered_by_user"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:inputType="number"
+        android:background="@drawable/custom_button"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="Didn't receive the code?" />
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="#fff"
+            android:text=" Send again"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/verify_btn"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Verify code"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/linkedin_button"
+        android:textColor="#ffffff"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content" />
+
+
+</LinearLayout>
